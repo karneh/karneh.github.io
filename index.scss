@@ -1,0 +1,355 @@
+@import '_vars';
+
+/* Style the header with a grey background and some padding */
+
+.body {
+  font-size: 1em;
+  font-family: $body;
+  color: $main;
+}
+
+.Experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1em;
+    margin: 1em;
+    width: 50%;
+
+    &:hover, &:active {
+      outline:none;
+      border: transparent;
+      border-radius: 0.75em;
+      box-shadow: 0.1em 0.1em 0.25em $secondary;
+      transition-duration: 0.3s;
+      cursor: pointer;
+    }
+
+    &__summary {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+     
+    &__left {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+
+      &__top {
+        h1 {
+          font-family: $title;
+          font-size: 1.25em;
+        }
+    
+        h2 {
+          font-family: $title;
+          font-size: 1em;
+        }
+      }
+
+      p {
+        font-family: $title;
+        font-size: 1em;
+      }
+    }
+
+    &__right {
+      height: 25%;
+      width: 25%;
+      border-radius: 0.75em;
+    }
+
+    &__picture {
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    &__info {
+      background-color: $secondary--light;
+      border-radius: 0.25em;
+      outline: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0.5em;
+
+      p {
+        font-family: $body;
+        font-size: 1em;
+        margin: 0em;
+      }
+    }
+
+    &__details {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &__left {
+        display: flex;
+        flex-direction: row;
+        padding: 0.5em;
+        background-color: $secondary--light;
+        border-radius: 0.25em;
+        outline: none;
+      }
+
+      &__right {
+        display: flex;
+        flex-direction: row;
+        padding: 0.5em;
+        background-color: $secondary--light;
+        border-radius: 0.25em;
+        outline: none;
+      }
+    }
+  }
+}
+
+.Photo {
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 2em;
+
+    h1 {
+      font-family: $title;
+      font-size: 2em;
+      margin-top: 0.5em;
+      text-align: left;
+    }
+
+    p {
+      font-family: $body;
+      font-size: 1em;
+      color: $main;
+      margin-top: 1em;
+      text-align: left;
+    }
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      margin: 1em;
+    }
+
+    &__photos {
+
+      summary {
+        font-family: $title;
+        font-size: 2em;
+        margin-bottom: 0.5em;
+        cursor: pointer;
+
+        &:hover, &:active {
+          transition-duration: 0.3s;
+          opacity: 60%;
+        }
+      }
+    }
+  }
+
+}
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2em;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+
+  &__h1 {
+    font-family: $title;
+    font-size: 1.25em;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    text-align: left;
+    width: 100%;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+      text-align: left;
+      text-decoration: none;
+      display: block;
+      font-family: $title;
+      font-size: 3em;
+      color: $main;
+      line-height: 1;
+
+      &:hover, &:active {
+        transition-duration: 0.3s;
+        opacity: 60%;
+      }
+    }
+
+    &__nav {
+      font-family: $title;
+      padding-left: 2em;
+
+      a {
+        text-decoration: none;
+        font-size: 1.25em;
+        margin: 0.25em;
+        color: $main;
+
+        &:hover, &:active {
+          transition-duration: 0.3s;
+          opacity: 60%;
+        }
+      }
+      
+    }
+  }
+
+  &__more {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2em;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-basis: 0;
+      flex-grow: 0.5;
+      min-width: 20em;
+      margin-left: 2em;
+
+      a {
+        //background-color: $secondary--light;
+        color: $links;
+
+        &:hover {
+          opacity: 60%;
+          font-style: italic;
+        }
+      }
+
+      h1 {
+        font-family: $title;
+        font-size: 1.25em;
+        margin-bottom: 1em;
+        text-align: left;
+      }
+
+      p {
+        font-family: $title;
+        font-size: 1em;
+        margin-bottom: 1em;
+        text-align: left;
+      }
+    }
+
+    &__images {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 1em;
+      overflow: hidden;
+      flex-basis: 0;
+      flex-grow: 1.5;
+      min-width: 30em;
+
+      img {
+        border-radius: 0.5em;
+        width: 30vh;
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 2em;
+
+    &__text{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-grow: 1.25;
+      flex-basis: 0;
+
+      a {
+        //background-color: $secondary--light;
+        color: $links;
+
+        &:hover {
+          opacity: 60%;
+          font-style: italic;
+        }
+      }
+
+      h1 {
+        font-family: $title;
+        font-size: 1.25em;
+        margin-bottom: 1em;
+        text-align: left;
+      }
+
+      p {
+        font-family: $body;
+        font-size: 1em;
+        margin-bottom: 0.5em;
+        text-align: left;
+        background-color: $links;
+        color: white;
+        margin-top: 1em;
+      }
+
+      ul {
+        list-style-type: square;
+        margin-left: 1em;
+
+        li {
+          margin-bottom: 1em;
+          font-family: $body;
+          font-size: 1em;
+        }
+      }
+    }
+    &__picture{
+      border-radius: 0.5em;
+      width: 80%;
+      flex-grow: 0.75;
+      flex-basis: 0;
+      min-width: 20rem;
+    }
+  }
+
+}
