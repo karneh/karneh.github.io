@@ -8,6 +8,14 @@
   color: $main;
 }
 
+.Thoughts {
+
+  &__text {
+    font-family: $body;
+    font-size: 1em;
+  }
+}
+
 .Experience {
   display: flex;
   flex-direction: column;
@@ -154,6 +162,8 @@
     }
 
     &__photos {
+
+      padding-bottom: 1.5em;
 
       summary {
         font-family: $title;
