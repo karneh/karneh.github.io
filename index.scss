@@ -13,113 +13,87 @@
   &__text {
     font-family: $body;
     font-size: 1em;
+
+    ul {
+      list-style: circle;
+      list-style-position: inside;
+    }
+    
   }
 }
 
-.Experience {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
+.Projects {
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-family: $title;
+      font-size: 2em;
+      margin-top: 0.5em;
+      text-align: center;
+    }
+
+    p {
+      font-family: $body;
+      font-size: 1em;
+      color: $main;
+      margin-top: 1em;
+      text-align: center;
+    }
+  }
 
   &__container {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding: 1em;
-    margin: 1em;
-    width: 50%;
+    margin-top: 1em;
+
+    @media screen and (max-width: 400px) {
+      display: block;
+    }
+  }
+
+  &__column {
+    flex: 1;
+    flex-direction: column;
+  }
+
+  &__image {
+    position: relative;
+
+    img {
+      -webkit-filter: brightness(100%);
+    }
+
+    a {
+      display:none;
+    }
 
     &:hover, &:active {
-      outline:none;
-      border: transparent;
-      border-radius: 0.75em;
-      box-shadow: 0.1em 0.1em 0.25em $secondary;
-      transition-duration: 0.3s;
       cursor: pointer;
-    }
+      transition-duration: 0.3s;
 
-    &__summary {
-      list-style-type: none;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-     
-    &__left {
-      display: flex;
-      flex-direction: column;
-      gap: 2em;
-
-      &__top {
-        h1 {
-          font-family: $title;
-          font-size: 1.25em;
-        }
-    
-        h2 {
-          font-family: $title;
-          font-size: 1em;
-        }
+      img {
+        -webkit-filter: brightness(50%);
+        -webkit-transition: all 0.3 s;
       }
 
-      p {
-        font-family: $title;
-        font-size: 1em;
-      }
-    }
-
-    &__right {
-      height: 25%;
-      width: 25%;
-      border-radius: 0.75em;
-    }
-
-    &__picture {
-      width: 300px;
-      height: 300px;
-      overflow: hidden;
-    }
-
-    &__info {
-      background-color: $secondary--light;
-      border-radius: 0.25em;
-      outline: none;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 0.5em;
-
-      p {
-        font-family: $body;
-        font-size: 1em;
-        margin: 0em;
-      }
-    }
-
-    &__details {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-
-      &__left {
-        display: flex;
-        flex-direction: row;
-        padding: 0.5em;
-        background-color: $secondary--light;
-        border-radius: 0.25em;
-        outline: none;
-      }
-
-      &__right {
-        display: flex;
-        flex-direction: row;
-        padding: 0.5em;
-        background-color: $secondary--light;
-        border-radius: 0.25em;
-        outline: none;
+      a {
+        display: block;
+        text-align: center;
+        visibility: visible;
+        font: $body;
+        font-size: 1.5em;
+        color: white;
+        font-weight: bold;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        line-height: 100%;
+        transition: opacity .3s, visibility .3s;
       }
     }
   }
@@ -163,7 +137,9 @@
 
     &__photos {
 
-      padding-bottom: 1.5em;
+      &__padding {
+        padding-bottom: 1.5em;
+      }
 
       summary {
         font-family: $title;
@@ -208,6 +184,11 @@
   &__header {
     display: flex;
     justify-content: space-between;
+
+    &__logo {
+      width: 10em;
+      flex-shrink: 2;
+    }
 
     &__title {
       text-align: left;
@@ -306,7 +287,7 @@
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    margin-top: 2em;
+    margin-top: 0.5em;
 
     &__text{
       display: flex;
@@ -317,7 +298,8 @@
 
       a {
         //background-color: $secondary--light;
-        color: $links;
+        color: #999999;
+        font-weight: bold;
 
         &:hover {
           opacity: 60%;
@@ -335,11 +317,16 @@
       p {
         font-family: $body;
         font-size: 1em;
+        font-weight: bold;
         margin-bottom: 0.5em;
         text-align: left;
-        background-color: $links;
+        //background-color: $links;
         color: white;
         margin-top: 1em;
+
+        background: linear-gradient(to right,#108CE5, #7836A1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
 
       ul {
@@ -347,7 +334,7 @@
         margin-left: 1em;
 
         li {
-          margin-bottom: 1em;
+          margin-bottom: 0.25em;
           font-family: $body;
           font-size: 1em;
         }
