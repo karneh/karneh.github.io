@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="style.css.map" />
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Start - Fancybox Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   </head>
 
   <body class="Home">
@@ -13,7 +18,7 @@
     <div class="Home__header">
 
       <div class="Home__header__logo">
-        <img src="logo.png" alt="logo">
+        <a href="/" class="Home__header__title">Karen<br>Hinh</a>
       </div>
 
       <div class="Home__header__nav">
@@ -25,11 +30,70 @@
       </div>
     </div>
 
-    <div class="Projects__header">
-      <h1><b>Apple SPG</b></h1>
-      <p>Here's a preview of some of the technical projects I've had the chance to work on in the past few years!</p>
+    <div class="Portfolio__wrapper">
+      <div class="Portfolio__header">
+        <h1><b>Apple</b></h1>
+      </div>
+      <div class="Portfolio__intro">
+        <div class="Portfolio__intro__block">
+          <h1>Position</h1>
+          <p>Battery Test Engineer (SPG)</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Timeline</h1>
+          <p>May to August 2022</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Skills Applied</h1>
+          <p>Transient Thermal Modeling, Data Analysis, Model + Test Correlation</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Tools Used</h1>
+          <p>NX, Teamcenter, ANSYS Thermal, MATLAB, NI DAQ</p>
+        </div>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>Project Goals & Deliverables</h1>
+        <p>Insert some random explanation about goals & deliverables here.</p>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>Key Learnings</h1>
+        <p>Insert some random explanation about goals & deliverables here.</p>
+      </div>
+      <div class="Portfolio__intro">
+        <div class="Portfolio__intro__block">
+          <h1>Position</h1>
+          <p>Product Design Engineer (SPG)</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Timeline</h1>
+          <p>May to August 2021</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Skills Applied</h1>
+          <p>Requirements + Concepts Development, DFMA, FEA, Modal Analysis, Proof-of-Concept Build, Thermal Analysis + Testing</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Tools Used</h1>
+          <p>NX, Teamcenter, ANSYS Structural, ANSYS Thermal</p>
+        </div>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>Project Goals & Deliverables</h1>
+        <p>Insert some random explanation about goals & deliverables here.</p>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>Key Learnings</h1>
+        <p>Insert some random explanation about goals & deliverables here.</p>
+      </div>
     </div>
+    
+    <script>
+      Fancybox.bind("[data-fancybox]", {});
+    </script>
+    <script src="fade_in.js"></script>
+    <script src="menu.js"></script>
+    <script type="module" src="index.js"></script>
 
-    </div>
   </body>
 </html>

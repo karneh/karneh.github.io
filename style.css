@@ -15,6 +15,110 @@
   list-style-position: inside;
 }
 
+.Portfolio__wrapper {
+  max-width: 65%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.Portfolio__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5em;
+}
+.Portfolio__header h1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+}
+.Portfolio__header p {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+}
+.Portfolio__header img {
+  width: 70%;
+}
+.Portfolio__intro {
+  margin: 4.5em 0em 4.5em 0em;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  padding: 2.5em 0em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.Portfolio__intro__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-right: 2.5em;
+  width: 25%;
+}
+.Portfolio__intro__block h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+.Portfolio__intro__block p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+}
+.Portfolio__intro__block ul {
+  list-style-type: square;
+  margin-left: 1em;
+}
+.Portfolio__intro__block ul li {
+  margin-bottom: 0.25em;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+}
+.Portfolio__paragraph {
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.Portfolio__paragraph h1 {
+  margin-bottom: 0.5em;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+  background: linear-gradient(0.25turn, #7836A1, 30%, #108CE5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Portfolio__paragraph p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+}
+.Portfolio__paragraph p a {
+  color: #999999;
+  font-weight: bold;
+}
+.Portfolio__paragraph p a:hover {
+  opacity: 60%;
+  font-style: italic;
+}
+.Portfolio__paragraph__iframe {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+}
+.Portfolio__paragraph__iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .Projects__header {
   display: flex;
   flex-direction: column;
@@ -70,7 +174,6 @@
   font: "Poppins", sans-serif;
   font-size: 1.5em;
   color: white;
-  font-weight: bold;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -151,8 +254,16 @@
   justify-content: space-between;
 }
 .Home__header__logo {
-  width: 10em;
   flex-shrink: 2;
+}
+.Home__header__logo a {
+  font-family: "Poppins", sans-serif;
+  font-size: 3em;
+  text-align: left;
+  color: white;
+  background: linear-gradient(to right, #108CE5, #7836A1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .Home__header__title {
   text-align: left;
