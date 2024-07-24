@@ -96,6 +96,7 @@
 .Portfolio__paragraph p {
   font-family: "Poppins", sans-serif;
   font-size: 1em;
+  margin-bottom: 1.25em;
 }
 .Portfolio__paragraph p a {
   color: #999999;
@@ -104,6 +105,16 @@
 .Portfolio__paragraph p a:hover {
   opacity: 60%;
   font-style: italic;
+}
+.Portfolio__paragraph ul {
+  list-style-type: square;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+.Portfolio__paragraph ul li {
+  margin-bottom: 0.5em;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
 }
 .Portfolio__paragraph__iframe {
   position: relative;

@@ -119,6 +119,7 @@
     p {
       font-family: $body;
       font-size: 1em;
+      margin-bottom: 1.25em;
 
       a {
         color: #999999;
@@ -128,6 +129,18 @@
           opacity: 60%;
           font-style: italic;
         }
+      }
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 3em;
+      margin-right: 3em;
+
+      li {
+        margin-bottom: 0.5em;
+        font-family: $body;
+        font-size: 1em;
       }
     }
 
