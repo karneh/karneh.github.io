@@ -1,22 +1,105 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Style the header with a grey background and some padding */
+.Color--ag {
+  background-color: rgba(38, 170, 166, 0.462745098);
+}
+.Color--2 {
+  background-color: #00458C;
+}
+.Color--3 {
+  background-color: #8EBE3F;
+}
+.Color--4 {
+  background-color: #511C74;
+}
+
 .body {
   font-size: 1em;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   color: black;
 }
 
-.Thoughts__text {
-  font-family: "Poppins", sans-serif;
-  font-size: 1em;
+.Thoughts__wrapper {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
-.Thoughts__text ul {
-  list-style: circle;
-  list-style-position: inside;
+.Thoughts__header {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+.Thoughts__header h1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+}
+.Thoughts__header p {
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
+  margin-top: 1em;
+  padding: 0em 1.5em;
+}
+.Thoughts__header img {
+  width: 70%;
+}
+.Thoughts__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  margin-top: 1.5em;
+  padding: 1.5em;
+  box-shadow: 0 0 0 rgba(94, 94, 94, 0.15);
+  transition: box-shadow 0.3s ease;
+  border-radius: 1em;
+}
+.Thoughts__container:hover, .Thoughts__container:active {
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(101, 101, 101, 0.8);
+}
+.Thoughts__container__detail__category {
+  font-size: 0.85em;
+  font-family: "Inter", sans-serif;
+  color: #6b6b6b;
+  padding-bottom: 0.75em;
+}
+.Thoughts__container__detail__tags {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+}
+.Thoughts__container__detail__tags__single {
+  padding: 0.25em 0.5em;
+  font-size: 0.65em;
+  font-family: "Inter", sans-serif;
+  color: #6b6b6b;
+  border-radius: 0.85em;
+  margin-right: 1em;
+}
+.Thoughts__container__detail summary {
+  display: flex;
+  flex-direction: column;
+}
+.Thoughts__container__detail summary h1 {
+  font-size: 1.5em;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+.Thoughts__text {
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
+  color: #000000;
 }
 
 .Portfolio__wrapper {
-  max-width: 65%;
+  max-width: 60%;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -35,7 +118,7 @@
 }
 .Portfolio__header p {
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1em;
 }
 .Portfolio__header img {
@@ -65,7 +148,7 @@
   text-transform: uppercase;
 }
 .Portfolio__intro__block p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1em;
 }
 .Portfolio__intro__block ul {
@@ -74,7 +157,7 @@
 }
 .Portfolio__intro__block ul li {
   margin-bottom: 0.25em;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1em;
 }
 .Portfolio__paragraph {
@@ -84,7 +167,7 @@
 }
 .Portfolio__paragraph h1 {
   margin-bottom: 0.5em;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.5em;
   font-weight: bold;
   text-align: left;
@@ -94,7 +177,7 @@
   -webkit-text-fill-color: transparent;
 }
 .Portfolio__paragraph p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1em;
   margin-bottom: 1.25em;
 }
@@ -113,7 +196,7 @@
 }
 .Portfolio__paragraph ul li {
   margin-bottom: 0.5em;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1em;
 }
 .Portfolio__paragraph__iframe {
@@ -142,7 +225,7 @@
   text-align: center;
 }
 .Projects__header p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1em;
   color: black;
   margin-top: 1em;
@@ -182,7 +265,7 @@
   display: block;
   text-align: center;
   visibility: visible;
-  font: "Poppins", sans-serif;
+  font: "Inter", sans-serif;
   font-size: 1.5em;
   color: white;
   position: absolute;
@@ -197,17 +280,17 @@
 .Photo__header {
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  margin-top: 2em;
+  max-width: 60%;
+  margin: auto;
 }
 .Photo__header h1 {
   font-family: "Poppins", sans-serif;
   font-size: 2em;
   margin-top: 0.5em;
-  text-align: left;
+  text-align: center;
 }
 .Photo__header p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1em;
   color: black;
   margin-top: 1em;
@@ -220,9 +303,9 @@
   height: 100%;
 }
 .Photo__section__container {
+  margin: 4em 1em 1em 1em;
   display: flex;
   flex-direction: column;
-  margin: 1em;
 }
 .Photo__section__photos__padding {
   padding-bottom: 1.5em;
@@ -268,7 +351,7 @@
   flex-shrink: 2;
 }
 .Home__header__logo a {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 3em;
   text-align: left;
   color: white;
@@ -375,17 +458,18 @@
   font-style: italic;
 }
 .Home__body__text h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.25em;
   margin-bottom: 1em;
   text-align: left;
 }
 .Home__body__text p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1em;
   font-weight: bold;
   margin-bottom: 0.5em;
   text-align: left;
+  text-transform: uppercase;
   color: white;
   margin-top: 1em;
   background: linear-gradient(to right, #108CE5, #7836A1);
@@ -398,7 +482,7 @@
 }
 .Home__body__text ul li {
   margin-bottom: 0.25em;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1em;
 }
 .Home__body__picture {

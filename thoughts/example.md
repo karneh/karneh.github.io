@@ -1,6 +1,3 @@
-# Eating to Extinction: The World's Rarest Foods and Why We Need to Save Them
-## Dan Saladino
-
 - Bitterness and sourness, both associated with wild foods, are often signals of health-giving properties.
     - The orange varieties selected had low levels of phenols, bitter-tasting (but also health-giving) compounds. This meant they appealed to the increasingly sweet global palate, but left the global crop more vulnerable to pests and diseases because the bitter chemicals present in wild citrus such as *memang narang* are a big part of the plant’s natural defenses. As we reduce these compounds in our quest for more sweetness, farmers have to compensate and protect the fruit with more chemical sprays.
 - The human diet has undergone more change in the last 150 years (roughly 6 generations) than in the entire previous one million years (around 40,000 generations). And in the last half a century, trade, technology and corporate power have extended these dietary changes right across the world.

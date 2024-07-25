@@ -2,6 +2,24 @@
 
 /* Style the header with a grey background and some padding */
 
+.Color {
+  // modify text color for variety
+  // used for color-coding sections on FAQ page
+  &--ag {
+      background-color:  $ocean;
+  }
+  &--2 {
+      background-color: $navy;
+  }
+  &--3 {
+      background-color: $green;
+  }
+  &--4 {
+      background-color: $purple;
+  }
+
+}
+
 .body {
   font-size: 1em;
   font-family: $body;
@@ -10,22 +28,106 @@
 
 .Thoughts {
 
+  &__wrapper {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+
+    h1 {
+      text-align: center;
+      font-family: $title;
+      font-size: 2em;
+    }
+
+    p {
+      font-family: $body;
+      font-size: 1em;
+      margin-top: 1em;
+      padding: 0em 1.5em;
+    }
+
+    img {
+      width: 70%;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-top: 1.5em;
+    padding: 1.5em;
+    box-shadow: 0 0 0 rgba(94, 94, 94, 0.15);
+    transition: box-shadow 0.3s ease;
+    border-radius: 1em;
+
+    &:hover, &:active {
+      cursor: pointer;
+      box-shadow: 5px 5px 10px rgba(101, 101, 101, 0.8);
+    }
+
+    &__detail {
+
+      &__category {
+        font-size: 0.85em;
+        font-family: $body;
+        color:#6b6b6b;
+        padding-bottom: 0.75em;
+      }
+
+      &__tags {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1em;
+
+        &__single {
+          padding: 0.25em 0.5em;
+          font-size: 0.65em;
+          font-family: $body;
+          color:#6b6b6b;
+          border-radius: 0.85em;
+          margin-right: 1em;
+        }
+      }
+
+      summary {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+          font-size: 1.5em;
+          list-style: none;
+          font-family: $title;
+          font-weight: bold;
+        }
+        
+      }
+    }
+  }
+
   &__text {
     font-family: $body;
     font-size: 1em;
-
-    ul {
-      list-style: circle;
-      list-style-position: inside;
-    }
-    
+    color:#000000;
   }
+
 }
 
 .Portfolio {
 
   &__wrapper {
-    max-width: 65%;
+    max-width: 60%;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -243,14 +345,14 @@
   &__header {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    margin-top: 2em;
+    max-width: 60%;
+    margin: auto;
 
     h1 {
       font-family: $title;
       font-size: 2em;
       margin-top: 0.5em;
-      text-align: left;
+      text-align: center;
     }
 
     p {
@@ -269,9 +371,9 @@
     height: 100%;
 
     &__container {
+      margin: 4em 1em 1em 1em;
       display: flex;
       flex-direction: column;
-      margin: 1em;
     }
 
     &__photos {
@@ -458,7 +560,7 @@
       }
 
       h1 {
-        font-family: $title;
+        font-family: $body;
         font-size: 1.25em;
         margin-bottom: 1em;
         text-align: left;
@@ -470,6 +572,7 @@
         font-weight: bold;
         margin-bottom: 0.5em;
         text-align: left;
+        text-transform: uppercase;
         //background-color: $links;
         color: white;
         margin-top: 1em;
