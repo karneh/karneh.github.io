@@ -92,7 +92,7 @@
 }
 @media only screen and (min-width: 1024px) {
   .Thoughts__container {
-    padding: 1.5em;
+    padding: 1.5em 2.5em 1.5em 1.5em;
   }
   .Thoughts__container:hover, .Thoughts__container:active {
     cursor: pointer;
@@ -101,7 +101,7 @@
 }
 @media only screen and (max-width: 1024px) {
   .Thoughts__container {
-    padding: 0em;
+    padding: 0em 1em 0em 0em;
   }
   .Thoughts__container:hover, .Thoughts__container:active {
     cursor: pointer;
@@ -179,22 +179,32 @@
 }
 
 .Portfolio__wrapper {
-  max-width: 60%;
   display: flex;
   flex-direction: column;
-  margin: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .Portfolio__wrapper {
+    margin: 0em;
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .Portfolio__wrapper {
+    margin: auto;
+    max-width: 50%;
+  }
 }
 .Portfolio__header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 0.5em;
 }
 .Portfolio__header h1 {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 2em;
+  margin-top: 0.5em;
 }
 .Portfolio__header p {
   text-align: center;
@@ -205,20 +215,45 @@
   width: 70%;
 }
 .Portfolio__intro {
-  margin: 4.5em 0em 4.5em 0em;
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
-  padding: 2.5em 0em;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+}
+@media only screen and (max-width: 1024px) {
+  .Portfolio__intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4.5em 0em;
+    padding-top: 2.5em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .Portfolio__intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 4.5em 0em 4.5em 0em;
+    padding: 2.5em 0em;
+  }
 }
 .Portfolio__intro__block {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  padding-right: 2.5em;
-  width: 25%;
+}
+@media only screen and (max-width: 1024px) {
+  .Portfolio__intro__block {
+    padding-bottom: 2.5em;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .Portfolio__intro__block {
+    padding-right: 2.5em;
+    width: 25%;
+  }
 }
 .Portfolio__intro__block h1 {
   font-family: "Poppins", sans-serif;
@@ -227,13 +262,43 @@
   margin-bottom: 0.5em;
   text-transform: uppercase;
 }
+@media only screen and (min-width: 1600px) {
+  .Portfolio__intro__block h1 {
+    font-size: 1.35em;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .Portfolio__intro__block h1 {
+    font-size: 1em;
+  }
+}
 .Portfolio__intro__block p {
   font-family: "Inter", sans-serif;
   font-size: 1em;
 }
+@media only screen and (min-width: 1600px) {
+  .Portfolio__intro__block p {
+    font-size: 1.35em;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .Portfolio__intro__block p {
+    font-size: 1em;
+  }
+}
 .Portfolio__intro__block ul {
   list-style-type: square;
   margin-left: 1em;
+}
+@media only screen and (min-width: 1600px) {
+  .Portfolio__intro__block ul {
+    font-size: 1.35em;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .Portfolio__intro__block ul {
+    font-size: 1em;
+  }
 }
 .Portfolio__intro__block ul li {
   margin-bottom: 0.25em;
@@ -246,9 +311,7 @@
   flex-direction: column;
 }
 .Portfolio__paragraph h1 {
-  margin-bottom: 0.5em;
   font-family: "Inter", sans-serif;
-  font-size: 1.5em;
   font-weight: bold;
   text-align: left;
   color: white;
@@ -256,10 +319,31 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media only screen and (min-width: 1600px) {
+  .Portfolio__paragraph h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .Portfolio__paragraph h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+}
 .Portfolio__paragraph p {
   font-family: "Inter", sans-serif;
-  font-size: 1em;
   margin-bottom: 1.25em;
+}
+@media only screen and (min-width: 1600px) {
+  .Portfolio__paragraph p {
+    font-size: 1.35em;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .Portfolio__paragraph p {
+    font-size: 1em;
+  }
 }
 .Portfolio__paragraph p a {
   color: #999999;
@@ -278,6 +362,16 @@
   margin-bottom: 0.5em;
   font-family: "Inter", sans-serif;
   font-size: 1em;
+}
+@media only screen and (min-width: 1600px) {
+  .Portfolio__paragraph ul li {
+    font-size: 1.35em;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .Portfolio__paragraph ul li {
+    font-size: 1em;
+  }
 }
 .Portfolio__paragraph__iframe {
   position: relative;
@@ -308,16 +402,23 @@
   font-family: "Inter", sans-serif;
   color: black;
   margin-top: 1em;
-  text-align: center;
 }
 @media only screen and (min-width: 1600px) {
   .Projects__header p {
     font-size: 1.35em;
+    text-align: center;
   }
 }
-@media only screen and (max-width: 1600px) {
+@media only screen and (min-width: 1024px) and (max-width: 1600px) {
   .Projects__header p {
     font-size: 1em;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Projects__header p {
+    font-size: 1em;
+    text-align: left;
   }
 }
 .Projects__container {

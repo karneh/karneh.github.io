@@ -89,8 +89,16 @@
                 <!-- Define your own styles inside a `<style>` tag -->
                 <style>
                   li {margin-bottom: 1em;}
-
                   ul {margin-top: 1em;}
+
+                  @media only screen and (max-width: 1024px) {
+                    ul {
+                      margin-left: -0.5em;
+                    }
+                    li {
+                      margin-left: -1em;
+                    }
+                  }
                 </style>
               </template>
             </zero-md>         

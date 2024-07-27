@@ -102,7 +102,7 @@
     border-radius: 1em;
 
     @media only screen and (min-width: 1024px) {
-      padding: 1.5em;
+      padding: 1.5em 2.5em 1.5em 1.5em;
       &:hover, &:active {
         cursor: pointer;
         box-shadow: 5px 5px 10px rgba(101, 101, 101, 0.8);
@@ -110,7 +110,7 @@
     }
 
     @media only screen and (max-width: 1024px) {
-      padding: 0em;
+      padding: 0em 1em 0em 0em;
 
       &:hover, &:active {
         cursor: pointer;
@@ -196,10 +196,18 @@
 .Portfolio {
 
   &__wrapper {
-    max-width: 60%;
     display: flex;
     flex-direction: column;
-    margin: auto;
+
+    @media only screen and (max-width: 1024px) {
+      margin: 0em;
+      max-width: 100%;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      margin: auto;
+      max-width: 50%;
+    }
   }
 
   &__header {
@@ -207,12 +215,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 0.5em;
 
     h1 {
       text-align: center;
       font-family: $title;
       font-size: 2em;
+      margin-top: 0.5em;
     }
 
     p {
@@ -227,21 +235,42 @@
   }
 
   &__intro {
-    margin: 4.5em 0em 4.5em 0em;
     border-top: 1px solid #000000;
     border-bottom: 1px solid #000000;
-    padding: 2.5em 0em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    //opacity: 50%;
+
+    @media only screen and (max-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 4.5em 0em;
+      padding-top: 2.5em;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 4.5em 0em 4.5em 0em;
+      padding: 2.5em 0em;
+    }
 
     &__block {
       display: flex;
       flex-direction: column;
       justify-content: left;
-      padding-right: 2.5em;
-      width: 25%;
+      
+
+      @media only screen and (max-width: 1024px) {
+        padding-bottom: 2.5em;
+        width: 100%;
+      }
+  
+      @media only screen and (min-width: 1024px) {
+        padding-right: 2.5em;
+        width: 25%;
+      }
 
       h1 {
         font-family: $title;
@@ -249,16 +278,40 @@
         font-weight: 500;
         margin-bottom: 0.5em;
         text-transform: uppercase;
+
+        @media only screen and (min-width: 1600px) {
+          font-size: 1.35em;
+        }
+    
+        @media only screen and (max-width: 1600px) {
+          font-size: 1em;
+        }
       }
 
       p {
         font-family: $body;
         font-size: 1em;
+
+        @media only screen and (min-width: 1600px) {
+          font-size: 1.35em;
+        }
+    
+        @media only screen and (max-width: 1600px) {
+          font-size: 1em;
+        }
       }
 
       ul {
         list-style-type: square;
         margin-left: 1em;
+
+        @media only screen and (min-width: 1600px) {
+          font-size: 1.35em;
+        }
+    
+        @media only screen and (max-width: 1600px) {
+          font-size: 1em;
+        }
 
         li {
           margin-bottom: 0.25em;
@@ -275,9 +328,7 @@
     flex-direction: column;
 
     h1 {
-      margin-bottom: 0.5em;
       font-family: $body;
-      font-size: 1.5em;
       font-weight: bold;
       text-align: left;
       color: white;
@@ -285,12 +336,29 @@
       background: linear-gradient(.25turn, #7836A1, 30%, #108CE5);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      @media only screen and (min-width: 1600px) {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+      }
+
+      @media only screen and (max-width: 1600px) {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+      }
     }
 
     p {
       font-family: $body;
-      font-size: 1em;
       margin-bottom: 1.25em;
+
+      @media only screen and (min-width: 1600px) {
+      font-size: 1.35em;
+      }
+
+      @media only screen and (max-width: 1600px) {
+        font-size: 1em;
+      }
 
       a {
         color: #999999;
@@ -312,6 +380,14 @@
         margin-bottom: 0.5em;
         font-family: $body;
         font-size: 1em;
+
+        @media only screen and (min-width: 1600px) {
+        font-size: 1.35em;
+        }
+
+        @media only screen and (max-width: 1600px) {
+          font-size: 1em;
+        }
       }
     }
 
@@ -351,15 +427,21 @@
       font-family: $body;
       color: $main;
       margin-top: 1em;
-      text-align: center;
 
       @media only screen and (min-width: 1600px) {
-          font-size: 1.35em;
-        }
+        font-size: 1.35em;
+        text-align: center;
+      }
     
-        @media only screen and (max-width: 1600px) {
-          font-size: 1em;
-        }
+      @media only screen and (min-width: 1024px) and (max-width: 1600px) {
+        font-size: 1em;
+        text-align: center;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        font-size: 1em;
+        text-align: left;
+      }
     }
   }
 
