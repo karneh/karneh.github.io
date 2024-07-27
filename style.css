@@ -20,11 +20,28 @@
   color: black;
 }
 
-.Thoughts__wrapper {
-  max-width: 60%;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
+@media only screen and (min-width: 1600px) {
+  .Thoughts__wrapper {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1600px) {
+  .Thoughts__wrapper {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Thoughts__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
 }
 .Thoughts__header {
   display: flex;
@@ -359,6 +376,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.Home__header__logo a:hover {
+  cursor: pointer;
+}
 .Home__header__title {
   text-align: left;
   text-decoration: none;
@@ -434,13 +454,25 @@
   border-radius: 0.5em;
   width: 30vh;
 }
-.Home__body {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-  margin-top: 0.5em;
+@media only screen and (max-width: 1024px) {
+  .Home__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 0.5em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .Home__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 0.5em;
+  }
 }
 .Home__body__text {
   display: flex;
