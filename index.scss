@@ -67,9 +67,18 @@
 
     p {
       font-family: $body;
-      font-size: 1em;
+      
       margin-top: 1em;
       padding: 0em 1.5em;
+
+      @media only screen and (min-width: 1600px) {
+        font-size: 1.35em;
+      }
+
+      @media only screen and (max-width: 1600px) {
+        font-size: 1em;
+      }
+      
     }
 
     img {
@@ -96,10 +105,17 @@
     &__detail {
 
       &__category {
-        font-size: 0.85em;
         font-family: $body;
         color:#6b6b6b;
         padding-bottom: 0.75em;
+
+        @media only screen and (min-width: 1600px) {
+          font-size: 1em;
+        }
+    
+        @media only screen and (max-width: 1600px) {
+          font-size: 0.85em;
+        }
       }
 
       &__tags {
@@ -109,11 +125,18 @@
 
         &__single {
           padding: 0.25em 0.5em;
-          font-size: 0.65em;
           font-family: $body;
           color:#6b6b6b;
           border-radius: 0.85em;
           margin-right: 1em;
+
+          @media only screen and (min-width: 1600px) {
+            font-size: 0.85em;
+          }
+      
+          @media only screen and (max-width: 1600px) {
+            font-size: 0.65em;
+          }
         }
       }
 
@@ -134,8 +157,16 @@
 
   &__text {
     font-family: $body;
-    font-size: 1em;
     color:#000000;
+
+    @media only screen and (min-width: 1600px) {
+      font-size: 1.15em;
+    }
+
+    @media only screen and (max-width: 1600px) {
+      font-size: 1em;
+    }
+      
   }
 
 }
@@ -600,7 +631,6 @@
 
       p {
         font-family: $body;
-        font-size: 1em;
         font-weight: bold;
         margin-bottom: 0.5em;
         text-align: left;
@@ -612,6 +642,14 @@
         background: linear-gradient(to right,#108CE5, #7836A1);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        @media only screen and (min-width: 1600px) {
+          font-size: 1.35em;
+        }
+    
+        @media only screen and (max-width: 1600px) {
+          font-size: 1em;
+        }
       }
 
       ul {
@@ -621,7 +659,14 @@
         li {
           margin-bottom: 0.25em;
           font-family: $body;
-          font-size: 1em;
+
+          @media only screen and (min-width: 1600px) {
+          font-size: 1.35em;
+          }
+      
+          @media only screen and (max-width: 1600px) {
+            font-size: 1em;
+          }
         }
       }
     }
@@ -634,4 +679,17 @@
     }
   }
 
+}
+
+.body {
+  font-family: $body;
+  color: black;
+
+  @media only screen and (min-width: 1600px) {
+  font-size: 1.35em;
+  }
+
+  @media only screen and (max-width: 1600px) {
+    font-size: 1em;
+  }
 }

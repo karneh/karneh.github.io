@@ -58,9 +58,18 @@
 }
 .Thoughts__header p {
   font-family: "Inter", sans-serif;
-  font-size: 1em;
   margin-top: 1em;
   padding: 0em 1.5em;
+}
+@media only screen and (min-width: 1600px) {
+  .Thoughts__header p {
+    font-size: 1.35em;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .Thoughts__header p {
+    font-size: 1em;
+  }
 }
 .Thoughts__header img {
   width: 70%;
@@ -81,10 +90,19 @@
   box-shadow: 5px 5px 10px rgba(101, 101, 101, 0.8);
 }
 .Thoughts__container__detail__category {
-  font-size: 0.85em;
   font-family: "Inter", sans-serif;
   color: #6b6b6b;
   padding-bottom: 0.75em;
+}
+@media only screen and (min-width: 1600px) {
+  .Thoughts__container__detail__category {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .Thoughts__container__detail__category {
+    font-size: 0.85em;
+  }
 }
 .Thoughts__container__detail__tags {
   display: flex;
@@ -93,11 +111,20 @@
 }
 .Thoughts__container__detail__tags__single {
   padding: 0.25em 0.5em;
-  font-size: 0.65em;
   font-family: "Inter", sans-serif;
   color: #6b6b6b;
   border-radius: 0.85em;
   margin-right: 1em;
+}
+@media only screen and (min-width: 1600px) {
+  .Thoughts__container__detail__tags__single {
+    font-size: 0.85em;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .Thoughts__container__detail__tags__single {
+    font-size: 0.65em;
+  }
 }
 .Thoughts__container__detail summary {
   display: flex;
@@ -111,8 +138,17 @@
 }
 .Thoughts__text {
   font-family: "Inter", sans-serif;
-  font-size: 1em;
   color: #000000;
+}
+@media only screen and (min-width: 1600px) {
+  .Thoughts__text {
+    font-size: 1.15em;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .Thoughts__text {
+    font-size: 1em;
+  }
 }
 
 .Portfolio__wrapper {
@@ -497,7 +533,6 @@
 }
 .Home__body__text p {
   font-family: "Inter", sans-serif;
-  font-size: 1em;
   font-weight: bold;
   margin-bottom: 0.5em;
   text-align: left;
@@ -508,6 +543,16 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media only screen and (min-width: 1600px) {
+  .Home__body__text p {
+    font-size: 1.35em;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .Home__body__text p {
+    font-size: 1em;
+  }
+}
 .Home__body__text ul {
   list-style-type: square;
   margin-left: 1em;
@@ -515,7 +560,16 @@
 .Home__body__text ul li {
   margin-bottom: 0.25em;
   font-family: "Inter", sans-serif;
-  font-size: 1em;
+}
+@media only screen and (min-width: 1600px) {
+  .Home__body__text ul li {
+    font-size: 1.35em;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .Home__body__text ul li {
+    font-size: 1em;
+  }
 }
 .Home__body__picture {
   border-radius: 0.5em;
@@ -523,6 +577,21 @@
   flex-grow: 0.75;
   flex-basis: 0;
   min-width: 20rem;
+}
+
+.body {
+  font-family: "Inter", sans-serif;
+  color: black;
+}
+@media only screen and (min-width: 1600px) {
+  .body {
+    font-size: 1.35em;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .body {
+    font-size: 1em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
