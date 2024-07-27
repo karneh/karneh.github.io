@@ -20,27 +20,24 @@
   color: black;
 }
 
+.Thoughts__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
 @media only screen and (min-width: 1600px) {
   .Thoughts__wrapper {
     max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1600px) {
   .Thoughts__wrapper {
     max-width: 60%;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
   }
 }
 @media only screen and (max-width: 1024px) {
   .Thoughts__wrapper {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+    max-width: 100;
   }
 }
 .Thoughts__header {
@@ -385,8 +382,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 10em;
-  padding-right: 10em;
+  margin: auto;
+}
+@media only screen and (min-width: 1600px) {
+  .Home__wrapper {
+    max-width: 55%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1600px) {
+  .Home__wrapper {
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Home__wrapper {
+    max-width: 100%;
+  }
 }
 .Home__h1 {
   font-family: "Poppins", sans-serif;
