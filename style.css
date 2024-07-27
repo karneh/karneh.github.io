@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Style the header with a grey background and some padding */
 .Color--ag {
-  background-color: rgba(38, 170, 166, 0.462745098);
+  background-image: linear-gradient(0.25turn, #7836A1, 30%, #108CE5);
+  opacity: 65%;
 }
 .Color--2 {
   background-color: #00458C;
@@ -47,7 +48,7 @@
   flex-direction: column;
   align-items: left;
   justify-content: left;
-  margin-bottom: 1em;
+  margin-bottom: 2.5em;
 }
 .Thoughts__header h1 {
   text-align: center;
@@ -85,7 +86,7 @@
   flex-direction: column;
   justify-content: left;
   align-items: left;
-  margin-top: 1.5em;
+  margin-bottom: 1.5em;
   box-shadow: 0 0 0 rgba(94, 94, 94, 0.15);
   transition: box-shadow 0.3s ease;
   border-radius: 1em;
@@ -130,7 +131,7 @@
 .Thoughts__container__detail__tags__single {
   padding: 0.25em 0.5em;
   font-family: "Inter", sans-serif;
-  color: #6b6b6b;
+  color: #ffffff;
   border-radius: 0.85em;
   margin-right: 1em;
 }
