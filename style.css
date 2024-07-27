@@ -501,6 +501,9 @@
   border-radius: 0.5em;
   width: 30vh;
 }
+.Home__body {
+  height: 100%;
+}
 @media only screen and (max-width: 1024px) {
   .Home__body {
     display: flex;
