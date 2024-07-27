@@ -32,7 +32,8 @@
 
     display: flex;
     flex-direction: column;
-    margin: auto;
+    justify-content: flex-start;
+    margin: 0em auto;
 
     @media only screen and (min-width: 1600px) {
       max-width: 50%;
@@ -45,6 +46,7 @@
 
     @media only screen and (max-width: 1024px) {
       max-width: 100;
+      padding-bottom: 2em;
     }
   }
 
@@ -53,27 +55,33 @@
     flex-direction: column;
     align-items: left;
     justify-content: left;
-    margin-top: 0.5em;
     margin-bottom: 1em;
 
     h1 {
       text-align: center;
       font-family: $title;
       font-size: 2em;
+      margin-top: 0.5em;
     }
 
     p {
       font-family: $body;
-      
       margin-top: 1em;
-      padding: 0em 1.5em;
+      
 
       @media only screen and (min-width: 1600px) {
         font-size: 1.35em;
+        padding: 0em 1.5em;
       }
 
-      @media only screen and (max-width: 1600px) {
+      @media only screen and (min-width: 1024px) and (max-width: 1600px) {
         font-size: 1em;
+        padding: 0em 1.5em;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        font-size: 1em;
+        padding: 0em;
       }
       
     }
@@ -89,14 +97,24 @@
     justify-content: left;
     align-items: left;
     margin-top: 1.5em;
-    padding: 1.5em;
     box-shadow: 0 0 0 rgba(94, 94, 94, 0.15);
     transition: box-shadow 0.3s ease;
     border-radius: 1em;
 
-    &:hover, &:active {
-      cursor: pointer;
-      box-shadow: 5px 5px 10px rgba(101, 101, 101, 0.8);
+    @media only screen and (min-width: 1024px) {
+      padding: 1.5em;
+      &:hover, &:active {
+        cursor: pointer;
+        box-shadow: 5px 5px 10px rgba(101, 101, 101, 0.8);
+      }
+    }
+
+    @media only screen and (max-width: 1024px) {
+      padding: 0em;
+
+      &:hover, &:active {
+        cursor: pointer;
+      }
     }
 
     &__detail {
@@ -142,10 +160,17 @@
         flex-direction: column;
 
         h1 {
-          font-size: 1.5em;
           list-style: none;
           font-family: $title;
           font-weight: bold;
+
+          @media only screen and (min-width: 1600px) {
+            font-size: 1.75em;
+          }
+    
+          @media only screen and (max-width: 1600px) {
+            font-size: 1.5em;
+          }
         }
         
       }
@@ -324,10 +349,17 @@
 
     p {
       font-family: $body;
-      font-size: 1em;
       color: $main;
       margin-top: 1em;
       text-align: center;
+
+      @media only screen and (min-width: 1600px) {
+          font-size: 1.35em;
+        }
+    
+        @media only screen and (max-width: 1600px) {
+          font-size: 1em;
+        }
     }
   }
 
@@ -390,7 +422,16 @@
     display: flex;
     flex-direction: column;
     max-width: 60%;
-    margin: auto;
+
+    @media only screen and (min-width: 1024px) {
+      margin: 0em auto;
+      
+    }
+
+    @media only screen and (max-width: 1024px) {
+      margin: 0em;
+      justify-content: center;
+    }
 
     h1 {
       font-family: $title;
@@ -405,13 +446,20 @@
       color: $main;
       margin-top: 1em;
       text-align: left;
+
+      @media only screen and (min-width: 1600px) {
+        font-size: 1.35em;
+      }
+  
+      @media only screen and (max-width: 1600px) {
+        font-size: 1em;
+      }
     }
   }
 
   &__section {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 100%;
 
     &__container {
@@ -421,6 +469,7 @@
     }
 
     &__photos {
+      margin-bottom: 1em;
 
       &__padding {
         padding-bottom: 1.5em;
@@ -447,6 +496,7 @@
   flex-direction: column;
   justify-content: flex-start;
   padding: 2em;
+  height: 100vh;
 
   &__wrapper {
     display: flex;
@@ -593,23 +643,30 @@
   }
 
   &__body {
-    height: 100%;
 
     @media only screen and (max-width: 1024px) {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 4rem;
-      margin-top: 0.5em;
+      margin-top: 1em;
     }
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 1024px) and (max-width: 1600px) {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
       gap: 4rem;
+      margin-top: 0.5em;
+    }
+
+    @media only screen and (min-width: 1600px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 6rem;
       margin-top: 0.5em;
     }
     
@@ -633,9 +690,16 @@
 
       h1 {
         font-family: $body;
-        font-size: 1.25em;
         margin-bottom: 1em;
         text-align: left;
+
+        @media only screen and (min-width: 1600px) {
+          font-size: 1.55em;
+        }
+    
+        @media only screen and (max-width: 1600px) {
+          font-size: 1.25em;
+        }
       }
 
       p {
@@ -663,7 +727,7 @@
 
       ul {
         list-style-type: square;
-        margin-left: 1em;
+        margin-left: 1.5em;
 
         li {
           margin-bottom: 0.25em;
@@ -685,6 +749,10 @@
       flex-grow: 0.75;
       flex-basis: 0;
       min-width: 20rem;
+
+       @media only screen and (max-width: 1024px) {
+        margin: 2em 0em;
+        }
     }
   }
 
@@ -700,5 +768,6 @@
 
   @media only screen and (max-width: 1600px) {
     font-size: 1em;
+    margin-bottom: 2em;
   }
 }
